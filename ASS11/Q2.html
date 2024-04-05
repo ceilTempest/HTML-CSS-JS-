@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Properties</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-3">
+    <h1>Bootstrap Grid Properties</h1>
+    <p>This page demonstrates various Bootstrap grid properties.</p>
+
+    <hr>
+
+    <h3>Grid System Basics</h3>
+    <div class="row">
+      <div class="col-md-4 bg-light">Column (4/12 on Medium Devices)</div>
+      <div class="col-md-4 bg-light">Column (4/12 on Medium Devices)</div>
+      <div class="col-md-4 bg-light">Column (4/12 on Medium Devices)</div>
+    </div>
+    <p>This row demonstrates three columns, each taking up 4 out of 12 columns on medium-sized devices (md) and above. You can adjust these values (e.g., col-md-6 for 6/12) to create different layouts.</p>
+
+    <hr>
+
+    <h3>Responsive Breakpoints</h3>
+    <p>Bootstrap uses breakpoints to adjust layouts for different screen sizes. Here's an example:</p>
+    <div class="row">
+      <div class="col-sm-6 bg-light">Column (6/12 on Small Devices)</div>
+      <div class="col-md-3 bg-light">Column (3/12 on Medium Devices)</div>
+      <div class="col-md-3 bg-light">Column (3/12 on Medium Devices)</div>
+    </div>
+    <p>This row showcases responsive behavior. On small devices (sm), the first column spans 6/12, while the remaining two columns take up 3/12 each on medium devices (md) and above.</p>
+
+    <hr>
+
+    <h3>Offsets and Ordering</h3>
+    <p>You can offset columns to create spacing or reorder them visually.</p>
+    <div class="row">
+      <div class="col-md-4 bg-light offset-md-2">Column (4/12 with Offset of 2 on Medium Devices)</div>
+      <div class="col-md-4 bg-light">Column (4/12 on Medium Devices)</div>
+    </div>
+    <p>In this example, the first column has an offset of 2 on medium devices (md), pushing it two columns to the right.</p>
+
+    <hr>
+
+    <h3>Nesting Grids</h3>
+    <p>You can nest grids to create more complex layouts.</p>
+    <div class="row">
+      <div class="col-md-6 bg-light">
+        <div class="row">
+          <div class="col-sm-6 bg-light">Nested Column (6/12 on Small Devices)</div>
+          <div class="col-sm-6 bg-light">Nested Column (6/12 on Small Devices)</div>
+        </div>
+      </div>
+      <div class="col-md-6 bg-light">Column (6/12 on Medium Devices)</div>
+    </div>
+    <p>This example demonstrates a nested grid. The first column in the outer row contains another row with two nested columns (visible on small devices).</p>
+
+    <hr>
+
+    <h3>Grid Options</h3>
+    <p>Bootstrap offers additional grid options like `.no-gutters` for removing gutters and `.container-fluid` for full-width containers.</p>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz

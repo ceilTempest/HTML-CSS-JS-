@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple"];
+
+// pop() - remove and return the last element
+const removedFruit = fruits.pop();
+console.log("After pop():", fruits, " (length:", fruits.length, ")"); // Output: After pop(): ["Banana", "Orange"] (length: 2)
+
+// push() - add element(s) to the end
+fruits.push("Mango", "Grape");
+console.log("After push():", fruits, " (length:", fruits.length, ")"); // Output: After push(): ["Banana", "Orange", "Mango", "Grape"] (length: 4)
+
+// shift() - remove and return the first element
+const firstFruit = fruits.shift();
+console.log("After shift():", fruits, " (length:", fruits.length, ")"); // Output: After shift(): ["Orange", "Mango", "Grape"] (length: 3)
+
+// unshift() - add element(s) to the beginning
+fruits.unshift("Kiwi", "Pineapple");
+console.log("After unshift():", fruits, " (length:", fruits.length, ")"); // Output: After unshift(): ["Kiwi", "Pineapple", "Orange", "Mango", "Grape"] (length: 5)
+
+// splice() - remove/replace elements (here, removing the second element)
+fruits.splice(1, 1);
+console.log("After splice():", fruits, " (length:", fruits.length, ")"); // Output: After splice(): ["Kiwi", "Orange", "Mango", "Grape"] (length: 4)
+
+    </script>
+</body>
+</html>

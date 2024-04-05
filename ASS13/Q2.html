@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form in Card</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Bootstrap Components Form</h5>
+        <form>
+          <!-- Progress Bar -->
+          <div class="mb-3">
+            <label for="progressBar" class="form-label">Progress Bar</label>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <!-- List Group -->
+          <div class="mb-3">
+            <label for="listGroup" class="form-label">List Group</label>
+            <ul class="list-group">
+              <li class="list-group-item">Item 1</li>
+              <li class="list-group-item">Item 2</li>
+              <li class="list-group-item">Item 3</li>
+            </ul>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="mb-3">
+            <label for="dropdown" class="form-label">Dropdown</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="mb-3">
+            <label class="form-label">Checkbox</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+              <label class="form-check-label" for="checkbox1">
+                Checkbox 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+              <label class="form-check-label" for="checkbox2">
+                Checkbox 2
+              </label>
+            </div>
+          </div>
+
+          <!-- Radio buttons -->
+          <div class="mb-3">
+            <label class="form-label">Radio Buttons</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioOptions" id="radio1" value="option1">
+              <label class="form-check-label" for="radio1">
+                Option 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioOptions" id="radio2" value="option2">
+              <label class="form-check-label" for="radio2">
+                Option 2
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>

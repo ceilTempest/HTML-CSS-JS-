@@ -1,0 +1,105 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<style>
+	    p{ 
+		width: 70%;
+		}
+		#overflow{
+		    width:30%;
+			border:solid
+		}
+		#para{
+		 margin-top:20%;
+		 width:40%;
+		 height:100px;
+		 border:solid;
+		 overflow-y:scroll
+		}
+	   .static{
+			position:static;
+			border: solid green;	
+	   }
+		
+	   .fixed{
+			position:fixed;
+			border: solid tomato;
+			background-color:lightgreen;
+            bottom: 0px;
+			right: 0px
+			}
+		.relative{
+			position:relative;
+			border: solid tomato;
+			left:50px
+		}
+		.absolute{
+			position:absolute;
+			border:solid blue;
+			overflow-x: scroll;
+		}
+		
+		.sticky{
+			position:sticky;
+			border:solid tomato;
+			top:0
+		}
+	</style>
+<head>
+<body>
+	<p>An element with position: static; 
+		is not positioned in any special way; 
+		is always positioned according to the normal flow of the page:</p>
+	<div class="static">
+		this div has position: static
+	</div>
+  <hr>
+  <p id="overflow">
+  An element with position: fixed; is positioned relative to the viewport, 
+  which means it always stays in the same place even if the page is scrolled. 
+  The top, right, bottom, and left properties are used to position the element.
+  A fixed element does not leave a gap in the page where it would normally have 
+  been located.
+</p>
+  <div class="fixed">
+		this div has position: fixed
+  </div>
+  
+  <hr>
+  <p>
+  An element with position: relative; is positioned relative to its normal position.
+  Setting the top, right, bottom, and left properties of a relatively-positioned
+  element will cause it to be adjusted away from its normal position. 
+  Other content will not be adjusted to fit into any gap left by the element.
+  </p>
+  <div class="relative">
+	this div has position: relative
+  </div>
+  
+  <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+    However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+    Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+  </p>
+  <div class="absolute">
+	this div has position: absolute
+	  <div class="relative">
+	this div has position: relative
+  </div>
+  </div>
+ <div id="para">
+
+  <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+    <div class="sticky">
+	this div has position: sticky
+  </div>
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+    <p>Scroll back up to remove the stickyness.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+<body>
+
+</html>

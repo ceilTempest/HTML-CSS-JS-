@@ -1,0 +1,43 @@
+#body{
+    margin-left: 500px;
+    
+}
+label{
+    display: inline-block;
+    text-align: left;
+    text-shadow:1px 1px 1px  rgb(236, 151, 31),
+                3px 3px 5px rgb(51, 171, 30);
+}
+
+.in{
+   
+    margin-left: 100px;
+    width: 300px;
+    
+}
+input{
+    margin-left:12px 
+  
+}
+input[type="password"]{
+    margin-left: 21px;
+}
+.a{
+    margin-left: 83px;
+}
+#ab{
+    margin-left: 54px;
+}
+#b{
+    width: 70px;
+    border-style: thin;
+    background-color: rgb(141, 248, 188);
+    border-radius: 5px ;
+    box-shadow: 3px 3px 5px red,
+                3px 3px 5px rgb(23, 112, 220);
+}
+
+
+
+
+

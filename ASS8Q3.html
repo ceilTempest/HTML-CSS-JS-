@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Form</title>
+</head>
+<body>
+  <h1>Membership Form</h1>
+  <form id="membershipForm">
+    <label for="memberName">Member Name:</label><br>
+    <input type="text" id="memberName" name="memberName" required><br><br>
+    <label for="contactNumber">Contact Number:</label><br>
+    <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+    
+    <h2>Select Plan:</h2>
+    <input type="radio" id="silverPlan" name="plan" value="silver" required>
+    <label for="silverPlan">Silver (10% Discount)</label><br>
+    <input type="radio" id="goldPlan" name="plan" value="gold" required>
+    <label for="goldPlan">Gold (20% Discount)</label><br>
+    <input type="radio" id="platinumPlan" name="plan" value="platinum" required>
+    <label for="platinumPlan">Platinum (30% Discount)</label><br><br>
+    
+    <label for="totalAmount">Total Bill Amount:</label><br>
+    <input type="number" id="totalAmount" name="totalAmount" required><br><br>
+    
+    <button type="button" onclick="calculateDiscount()">Calculate Discount</button>
+    <br><br>
+    
+    <div id="discountResult"></div>
+  </form>
+
+  <script>
+    function calculateDiscount() {
+      const memberName = document.getElementById('memberName').value;
+      const contactNumber = document.getElementById('contactNumber').value;
+      const plan = document.querySelector('input[name="plan"]:checked').value;
+      const totalAmount = parseFloat(document.getElementById('totalAmount').value);
+      
+      let discount = 0;
+      let discountedAmount = totalAmount;
+      
+      if (plan === 'silver') {
+        discount = totalAmount * 0.1;
+      } else if (plan === 'gold') {
+        discount = totalAmount * 0.2;
+      } else if (plan === 'platinum') {
+        discount = totalAmount * 0.3;
+      }
+      
+      discountedAmount = totalAmount - discount;
+      
+      const result = `Hi ${memberName}, your discount for the ${plan.toUpperCase()} plan is ₹${discount.toFixed(2)}. Your discounted bill amount is ₹${discountedAmount.toFixed(2)}`;
+      document.getElementById('discountResult').innerHTML = result;
+    }
+  </script>
+</body>
+</html>

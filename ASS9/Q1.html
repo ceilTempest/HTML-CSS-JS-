@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCurrentMonthName() {
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+                       "July", "August", "September", "October", "November", "December"];
+  const today = new Date();
+  const monthIndex = today.getMonth(); // Get month index (0-11)
+  return monthNames[monthIndex];
+}
+
+const currentMonth = getCurrentMonthName();
+alert(`The current month is ${currentMonth}.`);
+
+    </script>
+</body>
+</html>

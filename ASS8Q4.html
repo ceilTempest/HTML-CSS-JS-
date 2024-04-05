@@ -1,0 +1,35 @@
+<! DOCTYPE html>
+
+<html>
+       
+	<body>
+	    <h1> Your Max number is :-</h1>
+		<p id="maxi"></p>
+		
+		<h1> Your Min Number is :-</h1>
+		<p id="min"></p>
+
+	</body>
+	  <script>
+		 let arr = [];
+		 let min = Infinity;
+		 let max = 0;
+	     for (let i = 0;i<5; i++){
+             let t = prompt("enter a number");
+			 t = Number(t)
+			 arr.push(t);
+			 console.log(typeof t);
+			 if ( t >= max){
+				max = t;
+			 }
+             if ( t <= min){
+				min = t;
+			 }
+		 }
+		 document.getElementById("maxi").innerHTML = max;
+		 document.getElementById("min").innerHTML = min;
+		 console.log(max,min);
+	  </script>
+
+
+</html>

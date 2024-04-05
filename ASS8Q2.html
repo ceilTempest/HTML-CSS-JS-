@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <script>
+        function eligible(){
+          var txt;
+          let person = prompt("Enter your age:")
+          if (person >= 18){
+            txt = "You are for voting"  
+         }
+          else{
+            txt = "You are not eligible for voting"
+        }
+            document.getElementById("age").innerHTML = txt;
+    }
+     </script>
+ </head>
+ <body>
+    <h1>
+        click below to check you eligibility for voting:
+    </h1>
+    <button onclick="eligible()">click</button>
+    
+    <p id="age"></p>
+
+ </body>
+
+
+
+
+</html>
